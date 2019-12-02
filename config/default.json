@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://elba:elba@create-contacts-app-71avr.mongodb.net/test?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://elba:elba@create-contacts-app-71avr.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "secret"
 }
