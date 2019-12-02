@@ -1,0 +1,3 @@
+{
+  "mongoURI": "mongodb+srv://elba:elba@create-contacts-app-71avr.mongodb.net/<dbname>?retryWrites=true&w=majority"
+}
