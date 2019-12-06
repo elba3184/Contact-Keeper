@@ -13,7 +13,6 @@ import {
   LOGOUT,
   CLEAR_ERRORS,
 } from '../types';
-import setAuthtoken from '../../utils/setAuthToken.js';
 
 const AuthState = (props) => {
   const initialState = {
