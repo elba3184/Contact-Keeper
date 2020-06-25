@@ -1,6 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react';
 import ContactContext from '../../context/contact/contactContext';
-import { UPDATE_CONTACT } from '../../context/types';
 
 const ContactForm = () => {
   const contactContext = useContext(ContactContext);
@@ -27,6 +26,8 @@ const ContactForm = () => {
     type: 'personal',
   });
 
+  const { name, email, phone, type } = contact;
+
   const onChange = (e) =>
     setContact({ ...contact, [e.target.name]: e.target.value });
 
@@ -38,20 +39,12 @@ const ContactForm = () => {
       updateContact(contact);
     }
     clearAll();
-    contactContext.addContact(contact);
-    setContact({
-      name: '',
-      email: '',
-      phone: '',
-      type: 'personal',
-    });
   };
 
   const clearAll = () => {
     clearCurrent();
   };
 
-  const { name, email, phone, type } = contact;
   return (
     <form onSubmit={onSubmit}>
       <h2 className='text-primary'>
